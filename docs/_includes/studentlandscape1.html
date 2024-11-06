@@ -1,162 +1,162 @@
 <html>
-  <head>
-  </head>
-  <body>
-    <canvas width="400" height="480"></canvas>
-    <script src="https://cdn.codehs.com/chs-js-lib/0.2.21/dist/chs.iife.js"></script>
-    <script>
-      const CANV_WIDTH = getWidth();
+<head>
+</head>
+<body>
+<canvas width="400" height="480"></canvas>
+<script src="https://cdn.codehs.com/chs-js-lib/0.2.21/dist/chs.iife.js"></script>
+<script>
+const CANV_WIDTH = getWidth();
 const CANV_HEIGHT = getHeight();
 function main() {
-    let timeOfDay= readLine("What time do you want? (Day or night) ");
-    if(timeOfDay == "day"){
-        day();
-    }else if (timeOfDay == "night"){
-        night();
-    }
+let timeOfDay= readLine("What time do you want? (Day or night) ");
+if(timeOfDay == "day"){
+day();
+}else if (timeOfDay == "night"){
+night();
+}
 }
 function makeStars() {
-    for (let i = 0; i < 500; i++) {
-        let square = new Rectangle(5, 5);
-        let x = Randomizer.nextInt(0, getWidth());
-        let y = Randomizer.nextInt(0, getHeight());
-        square.setPosition(x, y);
-        if (i%2==0) {
-            square.setColor("white");
-        } else {
-            square.setColor("black");
-        }
-        add(square);
-    }
+for (let i = 0; i < 500; i++) {
+let square = new Rectangle(5, 5);
+let x = Randomizer.nextInt(0, getWidth());
+let y = Randomizer.nextInt(0, getHeight());
+square.setPosition(x, y);
+if (i%2==0) {
+square.setColor("white");
+} else {
+square.setColor("black");
+}
+add(square);
+}
 }
 function night(){
-    makeNightSky();
-    makeStars();
-    placeFlowers();
-    letItGrow();
-    makeDaGround();
+makeNightSky();
+makeStars();
+placeFlowers();
+letItGrow();
+makeDaGround();
 }
 function day(){
-    makeSky();
-    placeFlowers();
-    letItGrow();
-    makeDaGround();
-    makeItsSoFluffy();
+makeSky();
+placeFlowers();
+letItGrow();
+makeDaGround();
+makeItsSoFluffy();
 }
 function makeNightSky(){
-    let sky = new Rectangle(CANV_WIDTH, CANV_HEIGHT);
-    sky.setColor("black");
-    add(sky);
+let sky = new Rectangle(CANV_WIDTH, CANV_HEIGHT);
+sky.setColor("black");
+add(sky);
 }
 function makeSky(){
-    let sky = new Rectangle(CANV_WIDTH, CANV_HEIGHT);
-    sky.setColor("#2ae5f5");
-    add(sky);
+let sky = new Rectangle(CANV_WIDTH, CANV_HEIGHT);
+sky.setColor("#2ae5f5");
+add(sky);
 }
 function makeDaGround(){
-    let dirt = new Rectangle(CANV_WIDTH, CANV_HEIGHT / 3);
-    dirt.setColor("green");
-    dirt.setPosition(0, 400)
-    add(dirt);
+let dirt = new Rectangle(CANV_WIDTH, CANV_HEIGHT / 3);
+dirt.setColor("green");
+dirt.setPosition(0, 400)
+add(dirt);
 }
 function placeFlowers(){
-    placeStems();
-    lookAtDaPedals();
-    smellDaPedals();
-    sniffDaPedals();
+placeStems();
+lookAtDaPedals();
+smellDaPedals();
+sniffDaPedals();
 }
 function placeStems(){
-    let stem = new Rectangle(10, 200);
-    stem.setColor("green");
-    stem.setPosition(190, 200);
-    add(stem);
-    let leaf = new Oval(20, 80);
-    add(leaf);
-    leaf.setPosition(230, 250);
-    leaf.setColor("green");
-    leaf.setRotation(60);
-    let stem2 = new Rectangle(10, 120);
-    stem2.setColor("green");
-    stem2.setPosition(150, 280);
-    add(stem2);
-    let leaf2 = new Oval(10, 40);
-    add(leaf2);
-    leaf2.setPosition(170, 320);
-    leaf2.setColor("green");
-    leaf2.setRotation(60);
-    let stem3 = new Rectangle(10, 120);
-    stem3.setColor("green");
-    stem3.setPosition(230, 280);
-    add(stem3);
-    let leaf3 = new Oval(10, 40);
-    add(leaf3);
-    leaf3.setPosition(250, 320);
-    leaf3.setColor("green");
-    leaf3.setRotation(60);
+let stem = new Rectangle(10, 200);
+stem.setColor("green");
+stem.setPosition(190, 200);
+add(stem);
+let leaf = new Oval(20, 80);
+add(leaf);
+leaf.setPosition(230, 250);
+leaf.setColor("green");
+leaf.setRotation(60);
+let stem2 = new Rectangle(10, 120);
+stem2.setColor("green");
+stem2.setPosition(150, 280);
+add(stem2);
+let leaf2 = new Oval(10, 40);
+add(leaf2);
+leaf2.setPosition(170, 320);
+leaf2.setColor("green");
+leaf2.setRotation(60);
+let stem3 = new Rectangle(10, 120);
+stem3.setColor("green");
+stem3.setPosition(230, 280);
+add(stem3);
+let leaf3 = new Oval(10, 40);
+add(leaf3);
+leaf3.setPosition(250, 320);
+leaf3.setColor("green");
+leaf3.setRotation(60);
 }
 function lookAtDaPedals(){
-    let polygon = new Polygon();
-    polygon.addPoint(20, 20);
-    polygon.addPoint(5, 50);
-    polygon.addPoint(20, 80);
-    polygon.addPoint(60, 80);
-    polygon.addPoint(75, 50);
-    polygon.addPoint(60, 20);
-    polygon.setColor("pink");
-    add(polygon);
-    polygon.move(155, 150);
-    let circ = new Circle(15);
-    add(circ);
-    circ.setColor("yellow");
-    circ.setPosition(195, 200);
+let polygon = new Polygon();
+polygon.addPoint(20, 20);
+polygon.addPoint(5, 50);
+polygon.addPoint(20, 80);
+polygon.addPoint(60, 80);
+polygon.addPoint(75, 50);
+polygon.addPoint(60, 20);
+polygon.setColor("pink");
+add(polygon);
+polygon.move(155, 150);
+let circ = new Circle(15);
+add(circ);
+circ.setColor("yellow");
+circ.setPosition(195, 200);
 }
 function smellDaPedals(){
-    let one = new Circle(20);
-    let two = new Circle(20);
-    let three = new Circle(20);
-    one.setPosition(135, 285);
-    two.setPosition(155, 285);
-    three.setPosition(175, 285);
-    one.setColor("red");
-    two.setColor("red");
-    three.setColor("red");
-    add(one);
-    add(two);
-    add(three);
+let one = new Circle(20);
+let two = new Circle(20);
+let three = new Circle(20);
+one.setPosition(135, 285);
+two.setPosition(155, 285);
+three.setPosition(175, 285);
+one.setColor("red");
+two.setColor("red");
+three.setColor("red");
+add(one);
+add(two);
+add(three);
 }
 function sniffDaPedals(){
-    let flow = new Circle(30);
-    flow.setPosition(235, 275);
-    flow.setColor("purple");
-    add(flow);
-    let circl = new Circle(15);
-    add(circl);
-    circl.setColor("yellow");
-    circl.setPosition(235, 275);
+let flow = new Circle(30);
+flow.setPosition(235, 275);
+flow.setColor("purple");
+add(flow);
+let circl = new Circle(15);
+add(circl);
+circl.setColor("yellow");
+circl.setPosition(235, 275);
 }
 function letItGrow(){
-    let trunk = new Rectangle(30, CANV_HEIGHT);
-    trunk.setColor("brown");
-    add(trunk);
-    let leafs = new Circle(150);
-    leafs.setColor("green");
-    add(leafs);
+let trunk = new Rectangle(30, CANV_HEIGHT);
+trunk.setColor("brown");
+add(trunk);
+let leafs = new Circle(150);
+leafs.setColor("green");
+add(leafs);
 }
 function makeItsSoFluffy(){
-    let first = new Circle(40);
-    let second = new Circle(40);
-    let third = new Circle(40);
-    first.setColor("white");
-    second.setColor("white");
-    third.setColor("white");
-    first.setPosition(290, 20);
-    second.setPosition(330, 20);
-    third.setPosition(370, 20);
-    add(first);
-    add(second);
-    add(third);
+let first = new Circle(40);
+let second = new Circle(40);
+let third = new Circle(40);
+first.setColor("white");
+second.setColor("white");
+third.setColor("white");
+first.setPosition(290, 20);
+second.setPosition(330, 20);
+third.setPosition(370, 20);
+add(first);
+add(second);
+add(third);
 }
 main();
-    </script>
-  </body>
+</script>
+</body>
 </html>
