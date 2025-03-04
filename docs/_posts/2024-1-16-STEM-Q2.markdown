@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Second Quarter of STEM"
+---
+We changed a lot for our second quarter of STEM! We spent a lot less time on programming so that we could spend more time on building robots! It was our first run building them, and it was a big learning experience for the students and teacher alike! We still programmed the emoji project, and the students had a lot of creative designs, here are some that stand out:
+![IMG1](/assets/STEM7Q2.png)
+![IMG2](/assets/STEM7Q2_2.png)
+![IMG3](/assets/STEM7Q2_3.png)
+![IMG4](/assets/STEM8Q2.png)
