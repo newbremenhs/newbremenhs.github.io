@@ -21,8 +21,8 @@
 title: New Bremen High School's Official Github Page
 email: john.hartman@newbremenschools.org
 description: >- # this means to ignore newlines until "baseurl:"
-  The site where we show off some of the awesome stuff New Bremen High School is doing in computer science!
-baseurl: "https://newbremenhs.github.io" # the subpath of your site, e.g. /blog
+  New Bremen High School's Official Github Page for STEM, Computer Science, and Robotics!
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://newbremenhs.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  MisterHartmanNB
 
