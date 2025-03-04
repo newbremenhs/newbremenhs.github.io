@@ -4,5 +4,5 @@
 
 layout: home
 ---
-![Cardinal](/assets/cardinallogo.png)
 Welcome to the GitHub Page for New Bremen High School! We post regularly with some of the things we've been working on in Robotics, Computer Science, and STEM. Please look around and enjoy!
+![Cardinal](/assets/cardinallogo.png)
