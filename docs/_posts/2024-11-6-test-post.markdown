@@ -1,7 +1,6 @@
 ---
 layout: post
-title:  "Landscape Project"
-date:   2024-11-06 14:11:30 +0000
+title:  "Check"
 ---
 This is a test of posting a student's project as an html file on our jekyll site:
 ![Test1]({{base.url}}/assets/STEM7Q1.png)
