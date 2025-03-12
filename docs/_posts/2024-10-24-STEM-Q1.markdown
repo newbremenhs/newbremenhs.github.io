@@ -3,6 +3,6 @@ layout: post
 title:  "First Quarter of STEM"
 ---
 Our first group of 7th and 8th students have completed STEM, and it's really been my pleasure to teach them. We did a very rigorous programming portion in this class, and the students really rose to the challenge. Their final project was to create an interactive piece of digital art, here are some screenshots of some I really enjoyed:
-![Q1_1](/assets/STEM7Q1.png)
-![Q1_2](/assets/STEM7Q1_2.png)
-![Q1_3](/assets/STEMQ1.png)
+![Q1_1](/assets/2024-10-24/STEM7Q1.png)
+![Q1_2](/assets/2024-10-24/STEM7Q1_2.png)
+![Q1_3](/assets/2024-10-24/STEMQ1.png)
